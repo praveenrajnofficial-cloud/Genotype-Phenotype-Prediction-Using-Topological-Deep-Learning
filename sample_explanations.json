@@ -1,0 +1,1042 @@
+[
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 3.411,
+    "true_LN_IC50": 2.875,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "SDC4",
+          0.08922285024665357
+        ],
+        [
+          "BEX4",
+          0.03898543119352184
+        ],
+        [
+          "GRAMD2B",
+          0.02801817696564692
+        ],
+        [
+          "NMNAT2",
+          0.017830077050154613
+        ],
+        [
+          "MTARC2",
+          0.01546349110090931
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "FBN2",
+          -0.053739952279874374
+        ],
+        [
+          "PTK7",
+          -0.025500731017788936
+        ],
+        [
+          "DNAJC12",
+          -0.015595468898329039
+        ],
+        [
+          "PDLIM1",
+          -0.011918340421993375
+        ],
+        [
+          "SUSD3",
+          -0.010668997757142354
+        ]
+      ],
+      "sensitivity_pathways": "Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.8163351641012933,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.30088402064180836,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.14306935390722403,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.14096538172570386,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.13608467836471694,
+          "direction": "sensitivity"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.3114,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 2.281,
+    "true_LN_IC50": 1.39,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "PDLIM1",
+          0.038440275055863234
+        ],
+        [
+          "MYO1E",
+          0.03338877081899897
+        ],
+        [
+          "PTK7",
+          0.02432069690917744
+        ],
+        [
+          "NR2F2",
+          0.020799345609953473
+        ],
+        [
+          "IGLL1",
+          0.016601914337016636
+        ]
+      ],
+      "resistance_pathways": "Glycolysis",
+      "sensitivity_genes": [
+        [
+          "SDC4",
+          -0.19243980893939128
+        ],
+        [
+          "LAPTM5",
+          -0.04744877747805824
+        ],
+        [
+          "GULP1",
+          -0.03445206748957571
+        ],
+        [
+          "MET",
+          -0.02900893654010022
+        ],
+        [
+          "SLC38A5",
+          -0.02498047986778716
+        ]
+      ],
+      "sensitivity_pathways": "RTK signaling",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.4446513991734777,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.20739907357337883,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.15582205814889669,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_48",
+          "substructure": "PubChem CACTVS substructure key 48",
+          "shap": 0.13669625143087982,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.12989632318506666,
+          "direction": "resistance"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.7729,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 1.881,
+    "true_LN_IC50": 1.925,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "GULP1",
+          0.026805900029617382
+        ],
+        [
+          "BEX4",
+          0.02342104622064441
+        ],
+        [
+          "NR2F2",
+          0.01935522283086694
+        ],
+        [
+          "PTK7",
+          0.017451424335118947
+        ],
+        [
+          "RNASE1",
+          0.012636499857429973
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "SDC4",
+          -0.1996005964498929
+        ],
+        [
+          "LAPTM5",
+          -0.04490434089346048
+        ],
+        [
+          "MET",
+          -0.030023928546297415
+        ],
+        [
+          "P4HA2",
+          -0.024246265303413707
+        ],
+        [
+          "DNAJC12",
+          -0.02188670167199039
+        ]
+      ],
+      "sensitivity_pathways": "RTK signaling; Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.42390253172537296,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.2061662395306625,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.15623405036421645,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_48",
+          "substructure": "PubChem CACTVS substructure key 48",
+          "shap": 0.13195367611718622,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.13007941971626993,
+          "direction": "resistance"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.8485,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 1.885,
+    "true_LN_IC50": 1.925,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "GULP1",
+          0.026512454047867427
+        ],
+        [
+          "BEX4",
+          0.023665781133838135
+        ],
+        [
+          "NR2F2",
+          0.01946909418412693
+        ],
+        [
+          "PTK7",
+          0.017484450598334287
+        ],
+        [
+          "RNASE1",
+          0.012648347772696583
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "SDC4",
+          -0.19957289427751249
+        ],
+        [
+          "LAPTM5",
+          -0.04495371125313515
+        ],
+        [
+          "MET",
+          -0.03004476010885215
+        ],
+        [
+          "P4HA2",
+          -0.023810968031669218
+        ],
+        [
+          "DNAJC12",
+          -0.02164679646294262
+        ]
+      ],
+      "sensitivity_pathways": "RTK signaling; Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.42390336240705867,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.2061662395306625,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.15535512731165232,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_48",
+          "substructure": "PubChem CACTVS substructure key 48",
+          "shap": 0.1319542596103835,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.13007941971626993,
+          "direction": "resistance"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.8474,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 2.805,
+    "true_LN_IC50": 2.9,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "SDC4",
+          0.053328857481496315
+        ],
+        [
+          "PSAT1",
+          0.021957946504744714
+        ],
+        [
+          "KCNK1",
+          0.021900020068714478
+        ],
+        [
+          "SKAP1",
+          0.021595485314958238
+        ],
+        [
+          "TFF3",
+          0.020204931317344764
+        ]
+      ],
+      "resistance_pathways": "Glycolysis",
+      "sensitivity_genes": [
+        [
+          "GULP1",
+          -0.042537539476997746
+        ],
+        [
+          "PTK7",
+          -0.032791308473791046
+        ],
+        [
+          "MTARC2",
+          -0.027780972333458914
+        ],
+        [
+          "TIMP2",
+          -0.026664708264370514
+        ],
+        [
+          "PROM1",
+          -0.02110862561718443
+        ]
+      ],
+      "sensitivity_pathways": "none matched",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.5821495530113786,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.2462574346543825,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.13086447021048056,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.12999461281172184,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.1188771945956522,
+          "direction": "sensitivity"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.6323,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 3.105,
+    "true_LN_IC50": 2.414,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "SDC4",
+          0.0685122450579878
+        ],
+        [
+          "GULP1",
+          0.03844055958201664
+        ],
+        [
+          "PTK7",
+          0.022397293381281123
+        ],
+        [
+          "NR2F2",
+          0.01980510659793354
+        ],
+        [
+          "P4HA2",
+          0.01806208804441878
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "CCL2",
+          -0.057066543102836244
+        ],
+        [
+          "FBN2",
+          -0.023637769360211888
+        ],
+        [
+          "SKAP1",
+          -0.017786979896959987
+        ],
+        [
+          "GNB4",
+          -0.01701110682705196
+        ],
+        [
+          "PCSK1N",
+          -0.012905402005135068
+        ]
+      ],
+      "sensitivity_pathways": "Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.629639213325944,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.2479478615147464,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.1337167740325641,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.12694494263145534,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.1170440305285104,
+          "direction": "sensitivity"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.4466,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 3.135,
+    "true_LN_IC50": 2.414,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "SDC4",
+          0.06961860299473943
+        ],
+        [
+          "GULP1",
+          0.03814714324538515
+        ],
+        [
+          "PTK7",
+          0.022955752967951878
+        ],
+        [
+          "NR2F2",
+          0.019810048214034728
+        ],
+        [
+          "P4HA2",
+          0.01806645497412131
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "CCL2",
+          -0.05062664401027447
+        ],
+        [
+          "FBN2",
+          -0.02238126665886262
+        ],
+        [
+          "SKAP1",
+          -0.017814101333359367
+        ],
+        [
+          "GNB4",
+          -0.01701557849127357
+        ],
+        [
+          "PCSK1N",
+          -0.012918279130728908
+        ]
+      ],
+      "sensitivity_pathways": "Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.6296364652511948,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.2479478615147464,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.13370365118638924,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.12694494263145534,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.11704636808753305,
+          "direction": "sensitivity"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.4472,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 3.95,
+    "true_LN_IC50": 3.75,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "SDC4",
+          0.09384031730084541
+        ],
+        [
+          "ANKRD1",
+          0.03780973031388445
+        ],
+        [
+          "SKAP1",
+          0.03502337569334862
+        ],
+        [
+          "FBN2",
+          0.029066527844238414
+        ],
+        [
+          "DAB2",
+          0.025910764206677386
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "PTK7",
+          -0.028132863398402465
+        ],
+        [
+          "LDHB",
+          -0.02205721949106679
+        ],
+        [
+          "PROM1",
+          -0.010819290077963319
+        ],
+        [
+          "NMU",
+          -0.009247811814791002
+        ],
+        [
+          "KCNK1",
+          -0.008973429466295034
+        ]
+      ],
+      "sensitivity_pathways": "Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.918297242606939,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.34809212063501777,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.21424021507932017,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.15556791601769943,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.14720207364968754,
+          "direction": "sensitivity"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.1488,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 3.766,
+    "true_LN_IC50": 3.786,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "SDC4",
+          0.08981697295001241
+        ],
+        [
+          "KCNK1",
+          0.06947943113221987
+        ],
+        [
+          "GNB4",
+          0.02838017637706206
+        ],
+        [
+          "PTK7",
+          0.027756837354920624
+        ],
+        [
+          "NR2F2",
+          0.019724116585673645
+        ]
+      ],
+      "resistance_pathways": "RTK signaling",
+      "sensitivity_genes": [
+        [
+          "SKAP1",
+          -0.018203319637121396
+        ],
+        [
+          "MAGEH1",
+          -0.007613457218112267
+        ],
+        [
+          "RNASE1",
+          -0.006608015371332612
+        ],
+        [
+          "LDHB",
+          -0.006431255817393748
+        ],
+        [
+          "SULF2",
+          -0.005025461885565197
+        ]
+      ],
+      "sensitivity_pathways": "Glycolysis",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.6466795164767167,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.24950678697691908,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.14247671719322794,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.13526074257426102,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.12258431317785463,
+          "direction": "sensitivity"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.3265,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  },
+  {
+    "drug": "50869",
+    "predicted_LN_IC50": 2.807,
+    "true_LN_IC50": 1.097,
+    "prediction": "RESISTANT",
+    "threshold_note": "LN_IC50 threshold=-1.0; requires per-drug calibration",
+    "genomic_drivers": {
+      "resistance_genes": [
+        [
+          "LAPTM5",
+          0.03324408963005833
+        ],
+        [
+          "GULP1",
+          0.032385535869248604
+        ],
+        [
+          "DAB2",
+          0.03133607308992743
+        ],
+        [
+          "SKAP1",
+          0.03039450276712618
+        ],
+        [
+          "MAGEH1",
+          0.028668599372294292
+        ]
+      ],
+      "resistance_pathways": "none matched",
+      "sensitivity_genes": [
+        [
+          "SDC4",
+          -0.154729691148484
+        ],
+        [
+          "PTK7",
+          -0.031588056250429125
+        ],
+        [
+          "GRAMD2B",
+          -0.01882146084925075
+        ],
+        [
+          "MET",
+          -0.017948077132151338
+        ],
+        [
+          "TIMP2",
+          -0.013743479110827066
+        ]
+      ],
+      "sensitivity_pathways": "RTK signaling",
+      "shap_note": "SHAP values measure feature contribution to the prediction. They indicate statistical association, NOT causation. Validation in wet lab is required before mechanistic claims."
+    },
+    "chemical_drivers": {
+      "top_fingerprint_bits": [
+        {
+          "feature": "fp_bit_44",
+          "substructure": "PubChem CACTVS substructure key 44",
+          "shap": 0.478504837423857,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_614",
+          "substructure": "PubChem CACTVS substructure key 614",
+          "shap": -0.21133712509247887,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_534",
+          "substructure": "PubChem CACTVS substructure key 534",
+          "shap": 0.13597611087506162,
+          "direction": "resistance"
+        },
+        {
+          "feature": "fp_bit_372",
+          "substructure": "PubChem CACTVS substructure key 372",
+          "shap": -0.13134264739340656,
+          "direction": "sensitivity"
+        },
+        {
+          "feature": "fp_bit_478",
+          "substructure": "PubChem CACTVS substructure key 478",
+          "shap": 0.13057809391439842,
+          "direction": "resistance"
+        }
+      ],
+      "note": "These substructure features of the drug are associated with the predicted response. Each bit maps to a PubChem CACTVS key (see pubchem_fingerprints.pdf for full definitions)."
+    },
+    "topological_signal": {
+      "tda_net_shap": -0.5363,
+      "global_pvalue": 0.0,
+      "significant": true,
+      "note": "TDA features encode the topology of this cell line's IC50 response profile across training drugs that are chemically similar to the query drug (sublevel set persistence, chemical neighbourhood approach). Globally, TDA contribution is significant (p=0.000)."
+    },
+    "caveats": [
+      "SHAP = association, not causation.",
+      "Cell-line model \u2014 not validated in patient data.",
+      "Leave-drug-out split: test drug never seen in training.",
+      "Drug fingerprint coverage: 81.8%.",
+      "Failed drugs (zero fingerprint) may have unreliable drug-feature SHAP."
+    ]
+  }
+]
